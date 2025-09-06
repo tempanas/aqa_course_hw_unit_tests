@@ -9,9 +9,20 @@ for (const num of arr){
 }
 console.log(forOf);
 
-let arr1 = [1, 2, 3, 4, 5];
-arr1.push(6);
-arr1.unshift(0);
-arr1.splice(2, 1);
-arr1.pop();
-console.log(arr1);
+let result = [1, 2, 3, 4, 5];
+result.push(6);
+result.unshift(0);
+result.splice(2, 1);
+result.pop();
+console.log(result);
+
+const arr1 = [3, 11, 32, 7, 20];
+const [first, second, ...rest] = arr1;
+console.log(first);
+console.log(second);
+console.log(rest);
+
+const arr2 = [1, 2, 3, 4, 5];
+const arr3 = [6, 7, 8, 9, 10];
+const mergedArray = [...arr1, ...arr2];
+console.log(mergedArray);
